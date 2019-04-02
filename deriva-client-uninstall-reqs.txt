@@ -1,0 +1,4 @@
+deriva
+deriva-qt
+deriva-catalog-manage
+deriva-client
