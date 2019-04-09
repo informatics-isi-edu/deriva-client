@@ -4,8 +4,7 @@
 [![Python Versions](https://img.shields.io/pypi/pyversions/deriva-client.svg)](https://pypi.python.org/pypi/deriva-client)
 [![License](https://img.shields.io/pypi/l/deriva-client.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-An application suite of Python-based client software for use with the 
-DERIVA platform.
+###### An application suite of Python-based client software for use with the DERIVA platform.
 
 The `deriva-client` package bundles a set of software components 
 (both CLI and GUI), that allow users to interact with DERIVA platform 
@@ -28,22 +27,58 @@ Python software via the `pip` application, `deriva-client` can be easily
 installed along with all of it's dependencies directly from 
 [PyPi](https://pypi.org/project/deriva-client) using `pip`.
 
-#### Installation environment prerequisites:
+### Installation environment prerequisites:
 
-* A Python 3.5.4 or greater installation (or virtual environment) is required. 
+* A Python 3.5.4 or greater system installation is required. 
+
+### Quickstart installation
+
+The following commands can be used to perform a `venv`-based _virtual 
+environment_ installation to the current working directory. These commands 
+assume Python 3.5.4 or greater is installed and can be invoked from a 
+command shell using the `python3` command. 
+
+###### Mac/Linux
+```sh
+python3 -m venv ./deriva-client-venv
+source ./deriva-client-venv/bin/activate
+python3 -m pip install --upgrade pip setuptools wheel
+pip install deriva-client
+```
+
+###### Windows
+The following commands assume a Windows `Command Prompt` shell. For a 
+`Powershell` shell, the `activate.ps1` activation script should be invoked.
+```sh
+python3 -m venv .\deriva-client-venv
+.\deriva-client-venv\Scripts\activate
+python3 -m pip install --upgrade pip setuptools wheel
+pip install deriva-client
+```
+
+##### IMPORTANT NOTE:  
+While a virtual environment installation is generally the safest way to 
+install and isolate multiple software packages, it also must be 
+_activated_ before use. If this requirement is too strict, the 
+recommended alternative is to install the software into a 
+_user environment_ instead. See the complete installation procedure 
+below for more information.
+
+
+### Installation procedure
 
 * For MacOSX and Linux systems which include Python as a core part of the
 operating system, it is _highly recommended_ to install this software
-into a _virtual environment_, so that it does not interfere or conflict
+into a _virtual environment_ or a _user environment_, so that it does not interfere or conflict
 with the operating system's Python installation. The native Python3
 [`venv`](https://docs.python.org/3/tutorial/venv.html) module, the 
 [`virtualenv`](https://packaging.python.org/guides/installing-using-pip-and-virtualenv/) 
 package from PyPi, or the [Anaconda Distribution](https://www.anaconda.com/distribution/)
-environment are all suitable.  
+environment are all suitable for use as virtual environments.  
 
 * Instead of using a _virtual environment_, it is also possible to 
 install the software into a [_user environment_](https://pip.pypa.io/en/stable/user_guide/#user-installs) 
-using the `--user` argument to `pip install`.  
+using the `--user` argument when invoking `pip install`.  
 
 * Recent versions of `pip`, `setuptools`, and `wheel` are recommended. 
 If these components are already installed, updating them to the latest 
@@ -58,11 +93,11 @@ This step is specific to the type of virtual environment being used.
 
     1. For virtual environments execute the following:
         ```sh
-        python -m pip install –-upgrade pip, setuptools, wheel
+        python -m pip install –-upgrade pip setuptools wheel
         ```
     2. For user environments execute the following:
         ```sh
-        python -m pip install --user –-upgrade pip, setuptools, wheel
+        python -m pip install --user –-upgrade pip setuptools wheel
         ```
     3. For Linux system python installations it is recommended to use the 
     system's package manager such as `dnf`, `apt`, or `yum` to update 
@@ -78,8 +113,8 @@ using the `pip install` command.
         ```sh
         pip install --user deriva-client
         ```
-    3. For system-wide python installations (only do this if 
-    you understand all of the ramifications):
+    3. For system-wide python installations (only do this if you 
+        understand the complexities involved):
         ```sh
         pip3 install deriva-client
         ```
