@@ -63,13 +63,14 @@ python3 -m pip install --upgrade pip setuptools wheel
 pip install deriva-client
 ```
 
-##### IMPORTANT NOTE:  
-While a _virtual environment_ installation is generally the safest way to 
-install and isolate multiple software packages, it also must be 
-_activated_ before use. If this requirement is too cumbersome, the 
+###### IMPORTANT NOTE: Python _virtual environments_ versus _user environments_
+While a [_virtual environment_](https://docs.python.org/3/tutorial/venv.html) 
+installation is generally the safest way to install and isolate multiple 
+software packages, it also must be _activated_ before use and 
+_deactivated_ after use. If this requirement is too cumbersome, the 
 recommended alternative is to install the software into a 
-_user environment_ instead. See the complete installation procedure 
-below for more information.
+[_user environment_](https://pip.pypa.io/en/stable/user_guide/#user-installs) 
+instead. See the complete installation procedure below for more information.
 
 
 ### Installation procedure
@@ -127,14 +128,14 @@ using the `pip install` command.
         ```sh
         pip3 install deriva-client
         ```
-##### IMPORTANT NOTE: 
 
-###### Using `pip` to install software into __system-wide__ Python locations:
+###### IMPORTANT NOTES: Using `pip` to install software into __system-wide__ Python locations
 
 * Many newer Linux (as well as MacOSX) distributions contain both Python2
 and Python3 installed alongside each other. In these environments, both
-the python interpreter and `pip` are symbolically linked to the appropriate version,
-with `python` and `pip` generally linked to the Python2 versions.
+the python interpreter and `pip` are symbolically linked to the system 
+default version, which in general results in `python` and `pip` being 
+linked to the Python2 versions.
 * Python3 versions are commonly accessed via `python3` and `pip3`.
 If you are working _outside_ of a Python3 virtual environment and installing
 either to the system-wide Python location (not recommended) or a user-based
