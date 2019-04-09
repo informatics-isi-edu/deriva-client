@@ -24,7 +24,7 @@ users who are looking for a more traditional "turnkey" installation.
 For users who already have Python installed and are comfortable installing 
 Python software via the `pip` application, `deriva-client` can be easily 
 installed along with all of it's dependencies directly from 
-[PyPi](https://pypi.org/project/deriva-client) using `pip`.
+[PyPi](https://pypi.org/project/deriva-client) using basic `pip` commands.
 
 ### Installation environment prerequisites:
 
@@ -38,6 +38,9 @@ assume Python 3.5.4 or greater is installed and can be invoked from a
 command shell using the `python3` command. 
 
 ###### Mac/Linux
+The following commands assume a `BASH` (or compatible) command shell is 
+used. For a different command interpreter (e.g. `CSH`), invoke the `source` 
+command on the appropriate activation script in the virtual environment's `bin` directory. 
 ```sh
 python3 -m venv ./deriva-client-venv
 source ./deriva-client-venv/bin/activate
@@ -46,8 +49,8 @@ pip install deriva-client
 ```
 
 ###### Windows
-The following commands assume a Windows `Command Prompt` shell. For a 
-`Powershell` shell, the `activate.ps1` activation script should be invoked.
+The following commands assume a Windows `Command Prompt` command shell is used. For a 
+`Powershell` shell, the `activate.ps1` activation script should be invoked instead.
 ```sh
 python3 -m venv .\deriva-client-venv
 .\deriva-client-venv\Scripts\activate
@@ -56,9 +59,9 @@ pip install deriva-client
 ```
 
 ##### IMPORTANT NOTE:  
-While a virtual environment installation is generally the safest way to 
+While a _virtual environment_ installation is generally the safest way to 
 install and isolate multiple software packages, it also must be 
-_activated_ before use. If this requirement is too strict, the 
+_activated_ before use. If this requirement is too cumbersome, the 
 recommended alternative is to install the software into a 
 _user environment_ instead. See the complete installation procedure 
 below for more information.
@@ -90,11 +93,11 @@ This step is specific to the type of virtual environment being used.
 
 2. Update `pip`, `setuptools`, and `wheel` (optional).
 
-    1. For virtual environments execute the following:
+    1. For _virtual environments_ execute the following:
         ```sh
         python -m pip install –-upgrade pip setuptools wheel
         ```
-    2. For user environments execute the following:
+    2. For _user environments_ execute the following:
         ```sh
         python -m pip install --user –-upgrade pip setuptools wheel
         ```
@@ -104,11 +107,11 @@ This step is specific to the type of virtual environment being used.
 
 3. Install `deriva-client` directly from [PyPi](https://pypi.org/project/deriva-client) 
 using the `pip install` command.
-    1. For virtual environments execute the following:
+    1. For _virtual environments_ execute the following:
         ```sh
         pip install deriva-client
         ```
-    2. For user environments execute the following:
+    2. For _user environments_ execute the following:
         ```sh
         pip install --user deriva-client
         ```
