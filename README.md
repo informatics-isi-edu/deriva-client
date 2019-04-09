@@ -28,14 +28,19 @@ installed along with all of it's dependencies directly from
 
 ### Installation environment prerequisites:
 
-* A Python 3.5.4 or greater system installation is required. 
+* A Python 3.5.4 or greater system installation is required. Verify that 
+the appropriate Python interpreter can be invoked from a command shell 
+using the `python3` command. This can be tested simply with the following 
+command: 
+
+```sh
+python3 --version
+```
 
 ### Quickstart installation
 
 The following commands can be used to perform a `venv`-based _virtual 
-environment_ installation to the current working directory. These commands 
-assume Python 3.5.4 or greater is installed and can be invoked from a 
-command shell using the `python3` command. 
+environment_ installation to the current working directory. 
 
 ###### Mac/Linux
 The following commands assume a `BASH` (or compatible) command shell is 
@@ -93,13 +98,14 @@ This step is specific to the type of virtual environment being used.
 
 2. Update `pip`, `setuptools`, and `wheel` (optional).
 
-    1. For _virtual environments_ execute the following:
+    1. For _virtual environments_ execute the following (ensure the 
+    environment is _active_):
         ```sh
         python -m pip install –-upgrade pip setuptools wheel
         ```
     2. For _user environments_ execute the following:
         ```sh
-        python -m pip install --user –-upgrade pip setuptools wheel
+        python3 -m pip install --user –-upgrade pip setuptools wheel
         ```
     3. For Linux system python installations it is recommended to use the 
     system's package manager such as `dnf`, `apt`, or `yum` to update 
@@ -107,13 +113,14 @@ This step is specific to the type of virtual environment being used.
 
 3. Install `deriva-client` directly from [PyPi](https://pypi.org/project/deriva-client) 
 using the `pip install` command.
-    1. For _virtual environments_ execute the following:
+    1. For _virtual environments_ execute the following (ensure the 
+    environment is _active_):
         ```sh
         pip install deriva-client
         ```
     2. For _user environments_ execute the following:
         ```sh
-        pip install --user deriva-client
+        pip3 install --user deriva-client
         ```
     3. For system-wide python installations (only do this if you 
         understand the complexities involved):
