@@ -4,22 +4,21 @@
 [![Python Versions](https://img.shields.io/pypi/pyversions/deriva-client.svg)](https://pypi.python.org/pypi/deriva-client)
 [![License](https://img.shields.io/pypi/l/deriva-client.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-###### An application suite of Python-based client software for use with the DERIVA platform.
-
-The `deriva-client` package bundles a set of software components 
-(both CLI and GUI), that allow users to interact with DERIVA platform 
-servers. These tools provide functions such as:
+The `deriva-client` package bundles an application suite of Python-based 
+client software for use with the DERIVA platform. These tools provide functions such as:
 1. Authentication services for programmatic and non browser-based access.
 2. Bulk import and export of catalog assets and (meta) data.
 3. Catalog configuration, mutation and administration.
+4. Tools for working with [`bdbags`](https://github.com/fair-research/bdbag), 
+a file container format used by DERIVA.
 
 
 ## Installer packages for Windows and MacOSX
-Pre-packaged installers for Windows and MacOSX (which include a bundled 
-Python interpeter and all other dependencies) for `deriva-client` can be 
+Pre-packaged installers of `deriva-client` for Windows and MacOSX can be 
 found [here](https://github.com/informatics-isi-edu/deriva-client-bundle/releases). 
-These installer packages are recommended for Windows and MacOSX users 
-who are looking for a simple, turnkey installation.  
+These installer packages include a bundled Python interpeter and all 
+other software dependencies and are recommended for Windows and MacOSX 
+users who are looking for a more traditional "turnkey" installation.  
 
 ## Installing `deriva-client` from PyPi via `pip`
 For users who already have Python installed and are comfortable installing 
