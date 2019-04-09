@@ -26,7 +26,7 @@ Python software via the `pip` application, `deriva-client` can be easily
 installed along with all of it's dependencies directly from 
 [PyPi](https://pypi.org/project/deriva-client) using basic `pip` commands.
 
-### Installation environment prerequisites:
+### Installation Prerequisites
 
 * A Python 3.5.4 or greater system installation is required. Verify that 
 the appropriate Python interpreter can be invoked from a command shell 
@@ -37,7 +37,7 @@ command:
 python3 --version
 ```
 
-### Quickstart installation
+### Installation Quickstart
 
 The following commands can be used to perform a `venv`-based _virtual 
 environment_ installation to the current working directory. 
@@ -72,8 +72,9 @@ recommended alternative is to install the software into a
 [_user environment_](https://pip.pypa.io/en/stable/user_guide/#user-installs) 
 instead. See the complete installation procedure below for more information.
 
+---
 
-### Installation procedure
+### Installation Procedure
 
 * For MacOSX and Linux systems which include Python as a core part of the
 operating system, it is _highly recommended_ to install this software
@@ -144,8 +145,8 @@ substitute `pip3` for `pip` when issuing `pip` installation commands.
 * Also note that when installing into the system Python location via
 `pip` on Linux/MacOSX, the commands must be run as root or the  `sudo`
 command must be prefixed to the command line.
-    
-## Source code: 
+
+## Source Code
 The source code and additional documentation for the primary components of `deriva-client` can be found at the links below: 
 * [`deriva-py`](https://github.com/informatics-isi-edu/deriva-py)
 * [`deriva-qt`](https://github.com/informatics-isi-edu/deriva-qt)
