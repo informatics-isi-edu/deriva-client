@@ -7,6 +7,7 @@
 """
 import io
 from setuptools import setup
+from version import __version__
 
 
 def get_readme_contents():
@@ -29,16 +30,13 @@ setup(
     author_email=author_email,
     maintainer=author,
     maintainer_email=author_email,
-    version='0.3.0',
+    version=__version__,
     python_requires='>3.5.2',
-    requires=[
-        'setuptools'
-    ],
     install_requires=[
         'bdbag[boto,globus]==1.5.4',
-        'deriva==0.8.2',
-        'deriva-qt[PyQt5]==0.8.2',
-        'deriva-catalog-manage==0.3.0'
+        'deriva==0.8.3',
+        'deriva-qt[PyQt5]==0.8.3',
+        'deriva-catalog-manage==0.3.1'
     ],
     license='GNU GPL 3.0',
     classifiers=[
