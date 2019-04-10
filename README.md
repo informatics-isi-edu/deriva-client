@@ -28,10 +28,11 @@ installed along with all of it's dependencies directly from
 
 ### Installation Prerequisites
 
-* A Python 3.5.4 or greater system installation is required. Verify that 
-the appropriate Python interpreter can be invoked from a command shell 
-using the `python3` command. This can be tested simply with the following 
-command: 
+* A Python 3.5.4 or greater system installation is required. The latest 
+stable version of Python is recommended. 
+* Verify that the appropriate Python 3 interpreter can be invoked from a 
+command shell using the `python3` command. This can be tested simply 
+with the following command: 
 
 ```sh
 python3 --version
@@ -51,6 +52,22 @@ python3 -m venv ./deriva-client-venv
 source ./deriva-client-venv/bin/activate
 python3 -m pip install --upgrade pip setuptools wheel
 pip install deriva-client
+```
+
+###### Important Note: MacOSX users running Python 3.5
+If you encounter the following error:
+```
+Could not fetch URL https://pypi.python.org/simple/pip/: 
+There was a problem confirming the ssl certificate: 
+[SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:720) - skipping
+```
+This error means that you cannot update `pip`, `setuptools`, and `wheel` 
+via the command provided above. You can work around this error by issuing the 
+following commands instead, and then continue with the installation procedure as described. 
+
+```sh
+curl https://bootstrap.pypa.io/get-pip.py | python3
+pip install --upgrade setuptools
 ```
 
 ###### Windows
