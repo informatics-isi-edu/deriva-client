@@ -73,7 +73,7 @@ pip install --upgrade setuptools
 ###### Windows
 The following commands assume a Windows `Command Prompt` command shell is used. For a 
 `Powershell` shell, the `activate.ps1` activation script should be invoked instead.
-```sh
+```
 python3 -m venv .\deriva-client-venv
 .\deriva-client-venv\Scripts\activate
 python3 -m pip install --upgrade pip setuptools wheel
@@ -120,11 +120,11 @@ This step is specific to the type of virtual environment being used.
     1. For _virtual environments_ execute the following (ensure the 
     environment is _active_):
         ```sh
-        python -m pip install –-upgrade pip setuptools wheel
+        python -m pip install --upgrade pip setuptools wheel
         ```
     2. For _user environments_ execute the following:
         ```sh
-        python3 -m pip install --user –-upgrade pip setuptools wheel
+        python3 -m pip install --user --upgrade pip setuptools wheel
         ```
     3. For Linux system python installations it is recommended to use the 
     system's package manager such as `dnf`, `apt`, or `yum` to update 
