@@ -54,7 +54,7 @@ python3 -m pip install --upgrade pip setuptools wheel
 pip install deriva-client
 ```
 
-###### Important Note: MacOSX users running Python 3.5
+###### Important Note: For MacOSX users running Python 3.5.x with pip version < 9.0.3
 If you encounter the following error:
 ```
 Could not fetch URL https://pypi.python.org/simple/pip/: 
