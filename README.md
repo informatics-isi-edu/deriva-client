@@ -163,6 +163,30 @@ substitute `pip3` for `pip` when issuing `pip` installation commands.
 `pip` on Linux/MacOSX, the commands must be run as root or the  `sudo`
 command must be prefixed to the command line.
 
+## Installed Applications
+
+##### Graphical User Interface (GUI) applications
+| Application Name | Executable Name | Description |
+| --- | --- | --- |
+|DERIVA Authentication Agent|`deriva-auth`|Provides credential authentication and refresh services for one or more DERIVA servers. This application is intended to be run in the background after the user completes the login sequence.|
+|DERIVA Upload Utility|`deriva-upload`|Provides batch upload functionality for both catalog and asset data. This application is an interactive tool used for the bulk transfer of data to DERIVA servers.|
+
+##### Command-Line Interface (CLI) applications
+| Executable Name | Description |
+| --- | --- |
+|`deriva-acl-config`|The [`deriva-acl-config`](http://docs.derivacloud.org/deriva-py/cli/deriva-acl-config.html#deriva-acl-config) utility reads a configuration file and uses it to set ACLs for an ermrest catalog (or for a schema or table within that catalog).|
+|`deriva-annotation-config`|The [`deriva-annotation-config`](http://docs.derivacloud.org/deriva-py/cli/deriva-annotation-config.html#deriva-annotation-config) utility reads a configuration file and uses it to set annotations for an ermrest catalog (or for a schema or table within that catalog).|
+|`deriva-annotation-dump`|Outputs the current set of annotations in use for the specified catalog in JSON format.|
+|`deriva-annotation-rollback`|Provides a function to rollback the entire annotation hierarchy for the specified catalog to a given point in time specified by catalog snapshot ID. |
+|`deriva-hatrac-cli`|The [`deriva-hatrac-cli`](http://docs.derivacloud.org/deriva-py/cli/deriva-hatrac-cli.html) is a command-line utility for interacting with the DERIVA _Hatrac_ object store.|
+|`deriva-upload-cli`|The [`deriva-upload-cli`]() provides batch upload functionality for both catalog (_ERMrest_) and asset (_Hatrac_) data. This application is generally used for automating the bulk transfer of data to DERIVA servers.|
+|`deriva-download-cli`|The [`deriva-download-cli`](http://docs.derivacloud.org/deriva-py/cli/deriva-download-cli.html#deriva-download-cli) is used for orchestrating the bulk export of tabular data (stored in _ERMrest_ catalogs) and download of asset data (stored in _Hatrac_, or other supported HTTP-accessible object store).|
+|`deriva-catalog-config`|Provides functions to set up catalog schema and tables with a standard baseline annotation and ACL configuration.|
+|`deriva-catalog-dump`|Provides functions to dump the current configuration of a catalog as a set of [`deriva-py`](http://docs.derivacloud.org/deriva-py/index.html#python-command-line-clients-and-api-deriva-py) scripts. The scripts are pure deriva-py and have placeholder variables to set annotations, acls, and acl-bindings.|
+|`deriva-csv`|Provides functions to upload `csv` or other table-like data to a catalog with options to create a new table, validate input data and upload data.|
+|`bdbag`|The [`bdbag`](https://github.com/fair-research/bdbag/blob/master/doc/cli.md#bdbag-command-line-interface-cli) application provides a variety of functions for working with [`bagit`](https://datatracker.ietf.org/doc/draft-kunze-bagit/) file archives, a format used by DERIVA for data export.|
+|`bdbag-utils`|The [`bdbag-utils`](https://github.com/fair-research/bdbag/blob/master/doc/utils.md#bdbag-bdbag-utils--reference) application is used to make some of the more repetitive and programmable tasks associated with creating and maintaining bags easier.|
+                   
 ## Source Code
 The source code and additional documentation for the primary components of `deriva-client` can be found at the links below: 
 * [`deriva-py`](https://github.com/informatics-isi-edu/deriva-py)
