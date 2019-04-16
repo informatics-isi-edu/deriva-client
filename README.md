@@ -175,7 +175,7 @@ command must be prefixed to the command line.
 | Executable Name | Description |
 | --- | --- |
 |`deriva-acl-config`|The [`deriva-acl-config`](http://docs.derivacloud.org/deriva-py/cli/deriva-acl-config.html#deriva-acl-config) utility reads a configuration file and uses it to set ACLs for an ermrest catalog (or for a schema or table within that catalog).|
-|`deriva-annotation-config`|The [`deriva-annotation-config`](http://docs.derivacloud.org/deriva-py/cli/deriva-annotation-config.html#deriva-annotation-config) utility reads a configuration file and uses it to set annotations for an ermrest catalog (or for a schema or table within that catalog).|
+|`deriva-annotation-config`|The [`deriva-annotation-config`](http://docs.derivacloud.org/deriva-py/cli/deriva-annotation-config.html#deriva-annotation-config) utility reads a configuration file and uses it to set annotations for an _ERMrest_ catalog (or for a schema or table within that catalog).|
 |`deriva-annotation-dump`|Outputs the current set of annotations in use for the specified catalog in JSON format.|
 |`deriva-annotation-rollback`|Provides a function to rollback the entire annotation hierarchy for the specified catalog to a given point in time specified by catalog snapshot ID. |
 |`deriva-hatrac-cli`|The [`deriva-hatrac-cli`](http://docs.derivacloud.org/deriva-py/cli/deriva-hatrac-cli.html) is a command-line utility for interacting with the DERIVA _Hatrac_ object store.|
