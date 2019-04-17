@@ -14,13 +14,7 @@ a file container format used by DERIVA.
 
 ## Installed Applications
 
-##### Graphical User Interface (GUI) applications
-| Application Name | Executable Name | Description |
-| --- | --- | --- |
-|DERIVA Authentication Agent|`deriva-auth`|Provides credential authentication and refresh services for one or more DERIVA servers. This application is intended to be run in the background after the user completes the login sequence.|
-|DERIVA Upload Utility|`deriva-upload`|Provides batch upload functionality for both catalog and asset data. This application is an interactive tool used for the bulk transfer of data to DERIVA servers.|
-
-##### Command-Line Interface (CLI) applications
+###### Command-Line Interface (CLI) applications
 | Executable Name | Description |
 | --- | --- |
 |`bdbag`|The [`bdbag`](https://github.com/fair-research/bdbag/blob/master/doc/cli.md#bdbag-command-line-interface-cli) application provides a variety of functions for working with [`BagIt`](https://datatracker.ietf.org/doc/draft-kunze-bagit/) file archives, a file packaging format used by DERIVA for data export. This format is created by the DERIVA web applications when exporting data sets using the `BDBAG` option.|
@@ -36,10 +30,16 @@ a file container format used by DERIVA.
 |`deriva-hatrac-cli`|The [`deriva-hatrac-cli`](http://docs.derivacloud.org/deriva-py/cli/deriva-hatrac-cli.html) is a command-line utility for interacting directly with the DERIVA _Hatrac_ object store.|
 |`deriva-upload-cli`|The [`deriva-upload-cli`]() provides batch upload functionality for both catalog (_ERMrest_) and asset (_Hatrac_) data. This application is generally used for automating the bulk transfer of data to DERIVA servers.|
 
+###### Graphical User Interface (GUI) applications
+| Executable Name | Application Name | Description |
+| --- | --- | --- |
+|`deriva-auth`|DERIVA Authentication Agent|Provides credential authentication and refresh services for one or more DERIVA servers. This application is intended to be run in the background after the user completes the login sequence for each server.|
+|`deriva-upload`|DERIVA Upload Utility|Provides batch upload functionality for both catalog and asset data. This application is an interactive tool used for the bulk transfer of data to DERIVA servers.|
+
 ## Installer packages for Windows and MacOSX
 Pre-packaged installers of `deriva-client` for Windows and MacOSX can be 
 found [here](https://github.com/informatics-isi-edu/deriva-client-bundle/releases). 
-These installer packages include a bundled Python interpeter and all 
+These installer packages include a bundled Python interpreter and all 
 other software dependencies and are recommended for Windows and MacOSX 
 users who are looking for a more traditional "turnkey" installation.  
 
@@ -188,6 +188,7 @@ command must be prefixed to the command line.
 
 ## Source Code
 The source code and additional documentation for the primary components of `deriva-client` can be found at the links below: 
+
 * [`deriva-py`](https://github.com/informatics-isi-edu/deriva-py)
 * [`deriva-qt`](https://github.com/informatics-isi-edu/deriva-qt)
 * [`deriva-catalog-manage`](https://github.com/informatics-isi-edu/deriva-catalog-manage)
