@@ -33,10 +33,13 @@ setup(
     version=__version__,
     python_requires='>3.5.2',
     install_requires=[
+        # temp pin of urllib3 due to current current awscli requiring urllib3 < 1.25 but also
+        # need >=1.23 for http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20060
+        'urllib3==1.24.3',
         'bdbag[boto,globus]==1.5.4',
-        'deriva==0.8.3',
-        'deriva-qt[PyQt5]==0.8.3',
-        'deriva-catalog-manage==0.3.1'
+        'deriva==0.8.4',
+        'deriva-qt[PyQt5]==0.8.4',
+        'deriva-catalog-manage==0.4.2'
     ],
     license='GNU GPL 3.0',
     classifiers=[
