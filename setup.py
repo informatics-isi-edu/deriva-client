@@ -39,7 +39,7 @@ setup(
         'bdbag[boto,globus]==1.5.4',
         'deriva==0.8.4',
         'deriva-qt[PyQt5]==0.8.4',
-        'deriva-catalog-manage==0.4.2'
+        'deriva-catalog-manage==0.5.0'
     ],
     license='GNU GPL 3.0',
     classifiers=[
