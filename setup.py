@@ -37,9 +37,9 @@ setup(
         # need >=1.23 for http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20060
         'urllib3==1.24.3',
         'bdbag[boto,globus]==1.5.4',
-        'deriva==0.8.4',
+        'deriva==0.8.6',
         'deriva-qt[PyQt5]==0.8.4',
-        'deriva-catalog-manage==0.5.0'
+        'deriva-catalog-manage==0.5.1'
     ],
     license='GNU GPL 3.0',
     classifiers=[
