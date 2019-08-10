@@ -29,6 +29,7 @@ a file container format used by DERIVA.
 |`deriva-download-cli`|The [`deriva-download-cli`](http://docs.derivacloud.org/deriva-py/cli/deriva-download-cli.html#deriva-download-cli) is used for orchestrating the bulk export of tabular data (stored in _ERMrest_ catalogs) and download of asset data (stored in _Hatrac_, or other supported HTTP-accessible object store).|
 |`deriva-hatrac-cli`|The [`deriva-hatrac-cli`](http://docs.derivacloud.org/deriva-py/cli/deriva-hatrac-cli.html) is a command-line utility for interacting directly with the DERIVA _Hatrac_ object store.|
 |`deriva-upload-cli`|The [`deriva-upload-cli`]() provides batch upload functionality for both catalog (_ERMrest_) and asset (_Hatrac_) data. This application is generally used for automating the bulk transfer of data to DERIVA servers.|
+|`deriva-globus-auth-utils`|The [`deriva-globus-auth-utils`]() provides numerous utility functions for working with the [Globus Auth API](https://docs.globus.org/api/auth/reference/) in addition to Globus Auth Native App login functionality.|
 
 ###### Graphical User Interface (GUI) applications
 | Executable Name | Application Name | Description |
