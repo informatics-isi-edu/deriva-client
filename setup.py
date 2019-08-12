@@ -38,7 +38,7 @@ setup(
         'urllib3==1.24.3',
         'bdbag[boto,globus]==1.5.4',
         'fair-research-login',
-        'deriva==0.8.7',
+        'deriva==0.8.8',
         'deriva-qt[PyQt5]==0.8.5',
         'deriva-catalog-manage==0.5.1'
     ],
