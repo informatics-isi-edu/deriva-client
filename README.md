@@ -38,11 +38,16 @@ a file container format used by DERIVA.
 |`deriva-upload`|DERIVA Upload Utility|Provides batch upload functionality for both catalog and asset data. This application is an interactive tool used for the bulk transfer of data to DERIVA servers.|
 
 ## Installer packages for Windows and MacOSX
-Pre-packaged installers of `deriva-client` for Windows and MacOSX can be 
-found [here](https://github.com/informatics-isi-edu/deriva-client-bundle/releases). 
+Pre-packaged installers of `deriva-client` for Windows and MacOSX are 
+available. 
 These installer packages include a bundled Python interpreter and all 
 other software dependencies and are recommended for Windows and MacOSX 
-users who are looking for a more traditional "turnkey" installation.  
+users who are looking for a more traditional "turnkey" installation that 
+does not require them to install Python and manage Python software package 
+installations.  
+
+[Download the installer packages here.](https://github.com/informatics-isi-edu/deriva-client-bundle/releases)
+
 
 ## Installing `deriva-client` from PyPi via `pip`
 For users who already have Python installed and are comfortable installing 
