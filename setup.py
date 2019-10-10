@@ -36,10 +36,10 @@ setup(
         # temp pin of urllib3 due to current current awscli requiring urllib3 < 1.25 but also
         # need >=1.23 for http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20060
         'urllib3==1.24.3',
-        'bdbag[boto,globus]==1.5.5',
-        'fair-research-login',
-        'deriva==0.8.8',
-        'deriva-qt[PyQt5]==0.8.5',
+        'bdbag[boto,globus]==1.5.6',
+        'fair-research-login==0.1.5',
+        'deriva==0.8.9',
+        'deriva-qt[PyQt5]==0.8.6',
         'deriva-catalog-manage==0.5.1'
     ],
     license='GNU GPL 3.0',
