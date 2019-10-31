@@ -38,8 +38,8 @@ setup(
         'urllib3==1.24.3',
         'bdbag[boto,globus]==1.5.6',
         'fair-research-login==0.1.5',
-        'deriva==0.8.9',
-        'deriva-qt[PyQt5]==0.8.6',
+        'deriva==0.9.0',
+        'deriva-qt[PyQt5]==0.9.0',
         'deriva-catalog-manage==0.5.1'
     ],
     license='GNU GPL 3.0',
