@@ -37,7 +37,8 @@ setup(
         'fair-research-login==0.1.5',
         'deriva==1.0.0',
         'deriva-qt[PyQt5]==1.0.0',
-        'deriva-catalog-manage==0.6.0'
+        'deriva-catalog-manage==0.6.0',
+        'bdbag_gui@git+https://github.com/fair-research/bdbag_gui.git',
     ],
     license='GNU GPL 3.0',
     classifiers=[
