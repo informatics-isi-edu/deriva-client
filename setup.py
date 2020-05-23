@@ -38,7 +38,7 @@ setup(
         'deriva==1.0.0',
         'deriva-qt[PyQt5]==1.0.0',
         'deriva-catalog-manage==0.6.0',
-        'bdbag_gui@git+https://github.com/fair-research/bdbag_gui.git',
+        'bdbag_gui==1.0.0',
     ],
     license='GNU GPL 3.0',
     classifiers=[
