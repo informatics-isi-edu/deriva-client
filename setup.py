@@ -35,8 +35,8 @@ setup(
     install_requires=[
         'bdbag[boto,globus]==1.5.6',
         'fair-research-login==0.1.5',
-        'deriva==1.1.0',
-        'deriva-qt[PyQt5]==1.1.0',
+        'deriva==1.1.1',
+        'deriva-qt[PyQt5]==1.1.1',
         'deriva-catalog-manage==0.7.0',
         'bdbag_gui==1.0.0',
     ],
