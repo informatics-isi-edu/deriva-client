@@ -36,6 +36,7 @@ a file container format used by DERIVA.
 | --- | --- | --- |
 |`deriva-auth`|DERIVA Authentication Agent|Provides credential authentication and refresh services for one or more DERIVA servers. This application is intended to be run in the background after the user completes the login sequence for each server.|
 |`deriva-upload`|DERIVA Upload Utility|Provides batch upload functionality for both catalog and asset data. This application is an interactive tool used for the bulk transfer of data to DERIVA servers.|
+|`bdbag-gui`|BDBag Graphical User Interface|Provides a GUI application front-end to `bdbag`, supporting the most common operations such as; `create`, `update`, `validate`, `fetch` and `materialize`.|
 
 ## Installer packages for Windows and MacOSX
 Pre-packaged installers of `deriva-client` for Windows and MacOSX are 
@@ -191,6 +192,15 @@ substitute `pip3` for `pip` when issuing `pip` installation commands.
 * Also note that when installing into the system Python location via
 `pip` on Linux/MacOSX, the commands must be run as root or the  `sudo`
 command must be prefixed to the command line.
+* When using the `--user` flag with `pip3`, please be aware that due to various shell implementation 
+differences between operating systems and/or local policy configurations, the executables for 
+each installed program _may not_ automatically be found on the search path by default. 
+Therefore, it may be necessary to manually add the installed executable directory to the search path, 
+which may be an operating system, distribution and/or shell specific procedure.
+    - On Linux/MacOSX systems, the default executable installation location is generally
+      `~/.local/bin/`.
+    - On Windows systems, the default executable installation location is generally 
+      `%systemroot%\<username>\AppData\Roaming\Python\Python3{x}\Scripts`.
 
 ## Source Code
 The source code and additional documentation for the primary components of `deriva-client` can be found at the links below: 
