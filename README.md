@@ -1,5 +1,6 @@
 # deriva-client
 [![PyPi Version](https://img.shields.io/pypi/v/deriva-client.svg)](https://pypi.python.org/pypi/deriva-client)
+[![PyPi Downloads](https://img.shields.io/pypi/dm/deriva-client.svg)](https://pypistats.org/packages/deriva-client)
 [![PyPi Wheel](https://img.shields.io/pypi/wheel/deriva-client.svg)](https://pypi.python.org/pypi/deriva-client)
 [![Python Versions](https://img.shields.io/pypi/pyversions/deriva-client.svg)](https://pypi.python.org/pypi/deriva-client)
 [![License](https://img.shields.io/pypi/l/deriva-client.svg)](https://www.gnu.org/licenses/gpl-3.0)
