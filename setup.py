@@ -33,14 +33,14 @@ setup(
     version=__version__,
     python_requires='>3.5.2',
     install_requires=[
-        'bdbag[boto,globus]==1.5.6',
-        'fair-research-login==0.1.5',
+        'bdbag[boto,globus]==1.6.0',
+        'fair-research-login==0.2.0',
         'fair-identifiers-client==0.4.1',
-        'deriva==1.4.1',
-        'deriva-qt==1.4.1',
+        'deriva==1.4.5',
+        'deriva-qt==1.4.5',
         'deriva-catalog-manage==0.8.1',
-        'bdbag_gui==1.0.0',
-        "PyQt5==5.11.3"
+        'bdbag_gui==1.1.0',
+        "PyQtWebEngine==5.15.3"
     ],
     license='GNU GPL 3.0',
     classifiers=[
@@ -53,7 +53,8 @@ setup(
         'Programming Language :: Python',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7'
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8'
     ]
 )
 
