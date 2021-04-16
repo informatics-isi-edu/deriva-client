@@ -1,4 +1,5 @@
 deriva
 deriva-qt
+deriva-workbench
 deriva-catalog-manage
 deriva-client
