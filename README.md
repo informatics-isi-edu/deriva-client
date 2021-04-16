@@ -37,6 +37,7 @@ a file container format used by DERIVA.
 | --- | --- | --- |
 |`deriva-auth`|DERIVA Authentication Agent|Provides credential authentication and refresh services for one or more DERIVA servers. This application is intended to be run in the background after the user completes the login sequence for each server.|
 |`deriva-upload`|DERIVA Upload Utility|Provides batch upload functionality for both catalog and asset data. This application is an interactive tool used for the bulk transfer of data to DERIVA servers.|
+|`deriva-workbench`|DERIVA Workbench|Schema Workbench for the DERIVA platform.|
 |`bdbag-gui`|BDBag Graphical User Interface|Provides a GUI application front-end to `bdbag`, supporting the most common operations such as; `create`, `update`, `validate`, `fetch` and `materialize`.|
 
 ## Installer packages for Windows and MacOSX
@@ -59,7 +60,7 @@ installed along with all of it's dependencies directly from
 
 ### Installation Prerequisites
 
-* A Python 3.5.4 or greater system installation is required. The latest 
+* A Python 3.6 or greater system installation is required. The latest 
 stable version of Python is recommended. 
 * Verify that the appropriate Python 3 interpreter can be invoked from a 
 command shell using the `python3` command. This can be tested simply 
@@ -83,22 +84,6 @@ python3 -m venv ./deriva-client-venv
 source ./deriva-client-venv/bin/activate
 python3 -m pip install --upgrade pip setuptools wheel
 pip install deriva-client
-```
-
-###### Important Note: For MacOSX users running Python 3.5.x with pip version < 9.0.3
-If you encounter the following error:
-```
-Could not fetch URL https://pypi.python.org/simple/pip/: 
-There was a problem confirming the ssl certificate: 
-[SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:720) - skipping
-```
-This error means that you cannot update `pip`, `setuptools`, and `wheel` 
-via the command provided above. You can work around this error by issuing the 
-following commands instead, and then continue with the installation procedure as described. 
-
-```sh
-curl https://bootstrap.pypa.io/get-pip.py | python3
-pip install --upgrade setuptools
 ```
 
 ###### Windows
@@ -208,4 +193,5 @@ The source code and additional documentation for the primary components of `deri
 
 * [`deriva-py`](https://github.com/informatics-isi-edu/deriva-py)
 * [`deriva-qt`](https://github.com/informatics-isi-edu/deriva-qt)
+* [`deriva-workbench`](https://github.com/informatics-isi-edu/deriva-workbench)  
 * [`deriva-catalog-manage`](https://github.com/informatics-isi-edu/deriva-catalog-manage)
