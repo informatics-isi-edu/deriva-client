@@ -31,16 +31,17 @@ setup(
     maintainer=author,
     maintainer_email=author_email,
     version=__version__,
-    python_requires='>3.5.2',
+    python_requires='>=3.6',
     install_requires=[
-        'bdbag[boto,globus]==1.6.0',
+        'bdbag[boto,globus]==1.6.1',
         'fair-research-login==0.2.0',
         'fair-identifiers-client==0.4.1',
-        'deriva==1.4.5',
-        'deriva-qt==1.4.5',
-        'deriva-catalog-manage==0.8.1',
+        'deriva==1.5.0',
+        'deriva-qt==1.5.0',
+        'deriva-catalog-manage==0.9.0',
+        'deriva-workbench==0.1.0',
         'bdbag_gui==1.1.0',
-        "PyQtWebEngine==5.15.3"
+        "PyQtWebEngine==5.15.4"
     ],
     license='GNU GPL 3.0',
     classifiers=[
@@ -51,7 +52,6 @@ setup(
         "Operating System :: MacOS :: MacOS X",
         "Operating System :: Microsoft :: Windows",
         'Programming Language :: Python',
-        'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8'
