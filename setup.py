@@ -33,7 +33,8 @@ setup(
     version=__version__,
     python_requires='>=3.6',
     install_requires=[
-        'bdbag[boto,globus]==1.6.1',
+        'bdbag[boto]==1.6.1',
+        'globus_sdk<3',
         'fair-research-login==0.2.0',
         'fair-identifiers-client==0.4.1',
         'deriva==1.5.0',
@@ -54,7 +55,8 @@ setup(
         'Programming Language :: Python',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.8'
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9'
     ]
 )
 
