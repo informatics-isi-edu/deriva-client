@@ -33,16 +33,17 @@ setup(
     version=__version__,
     python_requires='>=3.6',
     install_requires=[
-        'bdbag[boto]==1.6.1',
-        'globus_sdk<3',
-        'fair-research-login==0.2.0',
-        'fair-identifiers-client==0.4.1',
-        'deriva==1.5.0',
-        'deriva-qt==1.5.0',
+        'bdbag[boto]==1.6.3',
+        'globus_sdk<4',
+        'minid==2.0.0',
+        'fair-research-login==0.2.6',
+        'fair-identifiers-client==0.5',
+        'deriva==1.5.3',
+        'deriva-qt==1.5.3',
         'deriva-catalog-manage==0.9.0',
         'deriva-workbench==0.1.0',
-        'bdbag_gui==1.1.0',
-        "PyQtWebEngine==5.15.4"
+        'bdbag_gui==1.2.0',
+        "PyQtWebEngine==5.15.5"
     ],
     license='GNU GPL 3.0',
     classifiers=[
