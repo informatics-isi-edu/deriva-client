@@ -33,13 +33,13 @@ setup(
     version=__version__,
     python_requires='>=3.6',
     install_requires=[
-        'bdbag[boto]==1.6.3',
+        'bdbag[boto]==1.7.0',
         'globus_sdk<4',
         'minid==2.0.1',
         'fair-research-login==0.3.0',
         'fair-identifiers-client==0.5',
-        'deriva==1.6.1',
-        'deriva-qt==1.6.1',
+        'deriva==1.6.3',
+        'deriva-qt==1.6.3',
         'deriva-chisel==0.3.0',
         'deriva-catalog-manage==0.9.1',
         'deriva-workbench==0.1.1',
@@ -58,7 +58,9 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
-        'Programming Language :: Python :: 3.9'
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11'
     ]
 )
 
