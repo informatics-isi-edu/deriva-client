@@ -33,7 +33,7 @@ setup(
     version=__version__,
     python_requires='>=3.6',
     install_requires=[
-        'bdbag[boto]==1.7.0',
+        'bdbag[boto]==1.7.1',
         'globus_sdk<4',
         'minid==2.0.1',
         'fair-research-login==0.3.0',
