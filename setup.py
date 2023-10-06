@@ -34,7 +34,7 @@ setup(
     python_requires='>=3.7',
     install_requires=[
         'bdbag[boto]==1.7.1',
-        'globus_sdk<4',
+        'globus_sdk>=3,<4',
         'minid==2.0.1',
         'fair-research-login==0.3.0',
         'fair-identifiers-client==0.5',
