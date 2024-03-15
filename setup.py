@@ -31,18 +31,18 @@ setup(
     maintainer=author,
     maintainer_email=author_email,
     version=__version__,
-    python_requires='>=3.7',
+    python_requires='>=3.8',
     install_requires=[
-        'bdbag[boto]==1.7.1',
+        'bdbag[boto]==1.7.2',
         'globus_sdk>=3,<4',
         'minid==2.0.1',
-        'fair-research-login==0.3.0',
-        'fair-identifiers-client==0.5',
-        'deriva==1.6.3',
-        'deriva-qt==1.6.3',
+        'fair-research-login==0.3.1',
+        'fair-identifiers-client==0.5.1',
+        'deriva==1.7.0',
+        'deriva-qt==1.7.0',
         'deriva-chisel==0.3.0',
         'deriva-catalog-manage==0.9.1',
-        'deriva-workbench==0.1.1',
+        'deriva-workbench==0.1.2',
         'bdbag_gui==1.2.0',
         "PyQtWebEngine==5.15.5"
     ],
@@ -55,11 +55,11 @@ setup(
         "Operating System :: MacOS :: MacOS X",
         "Operating System :: Microsoft :: Windows",
         'Programming Language :: Python',
-        'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
-        'Programming Language :: Python :: 3.11'
+        'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12'
     ]
 )
 
