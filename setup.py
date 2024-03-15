@@ -43,7 +43,7 @@ setup(
         'deriva-chisel==0.3.0',
         'deriva-catalog-manage==0.9.1',
         'deriva-workbench==0.1.2',
-        'bdbag_gui==1.2.0',
+        'bdbag_gui==1.2.1',
         "PyQtWebEngine==5.15.5"
     ],
     license='GNU GPL 3.0',
