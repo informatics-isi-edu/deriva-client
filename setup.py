@@ -41,7 +41,7 @@ setup(
         'deriva==1.7.0',
         'deriva-qt==1.7.0',
         'deriva-chisel==0.3.0',
-        'deriva-catalog-manage==0.9.1',
+        'deriva-catalog-manage==0.9.2',
         'deriva-workbench==0.1.2',
         'bdbag_gui==1.2.1',
         "PyQtWebEngine==5.15.5"
