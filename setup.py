@@ -33,15 +33,13 @@ setup(
     version=__version__,
     python_requires='>=3.8',
     install_requires=[
-        'bdbag[boto]==1.7.2',
+        'bdbag[boto]==1.7.3',
         'globus_sdk>=3,<4',
         'minid==2.0.1',
         'fair-research-login==0.3.1',
         'fair-identifiers-client==0.5.1',
-        'deriva==1.7.0',
-        'deriva-qt==1.7.0',
-        'deriva-chisel==0.3.0',
-        'deriva-catalog-manage==0.9.2',
+        'deriva==1.7.4',
+        'deriva-qt==1.7.4',
         'deriva-workbench==0.1.2',
         'bdbag_gui==1.2.1',
         "PyQtWebEngine==5.15.5"
